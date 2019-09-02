@@ -39,3 +39,12 @@ Console commands:
 - Symfony Plugin
 - PHP Annotations
 - PHP Toolbox
+
+## First Route & Controller
+
+- `config/routes.yaml` its store routes
+- `src/Controller/ArticleController.php` add first controller
+
+There's just one rule: a controller must return a Symfony Response object.
+
+Let's try the page!
