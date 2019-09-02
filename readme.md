@@ -65,3 +65,8 @@ composer require annotations
 
 Comment routes in `config/routes.yaml`.
 
+### Fancy Wildcard Routes
+
+> "Slug", it's a URL version of the title.
+
+

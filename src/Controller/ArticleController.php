@@ -14,4 +14,23 @@ class ArticleController
     {
         return new Response('OMG! My first page already! WOOO!');
     }
+
+    /**
+     * @Route("/about/company")
+     */
+    public function about()
+    {
+        return new Response('Future page to show about company info.');
+    }
+    
+    /**
+     * @Route("/news/{slug}")
+     */
+    public function show($slug)
+    {
+        return new Response(sprintf(
+            'Future page to show the article: "%s"',
+            $slug
+        ));
+    }    
 }
