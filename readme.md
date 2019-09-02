@@ -42,10 +42,26 @@ Console commands:
 
 ## First Route & Controller
 
+Two way creating routes.
+
+### First. File routes.yaml
+
 - `config/routes.yaml` its store routes
 - `src/Controller/ArticleController.php` add first controller
 
 There's just one rule: a controller must return a Symfony Response object.
 
 Let's try the page!
+
+### Second. Annotation Routes
+
+What exactly are annotations? They're PHP comments that are read as configuration.
+The route is defined right above the controller, everything is in one place. It works!
+
+Install:
+```
+composer require annotations
+```
+
+Comment routes in `config/routes.yaml`.
 
