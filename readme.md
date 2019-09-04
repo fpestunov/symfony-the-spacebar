@@ -113,3 +113,18 @@ git status
 - The first change is `config/bundles.php`. Bundles are the "plugin" system for Symfony. And whenever we install a third-party bundle, Flex adds it here so that it's used automatically.
 - The recipe also created some stuff, like a templates/ directory! Yep, no need to guess where templates go: it's pretty obvious!
 - Twig also needs some configuration, so the recipe added it in `config/packages/twig.yaml`.
+
+## 6. Tune Up Twig ❤️
+
+Lets extend `ArticleController` and add `$this->render()`. Create `templates/article/show.html.twig`.
+
+### Twig Basics
+
+Syntaxes:
+1. `{{ }}` "say something" tag, because it prints. And just like PHP, you can print anything: a variable, a string or a complex expression.
+2. `{% %}` "do something" tag. It's used whenever you need to, um, do something, instead of printing, like an if statement or for loop.
+3. `{# #}` comment tag.
+
+Additional links:
+- https://twig.symfony.com/
+- https://knpuniversity.com/screencast/twig 
