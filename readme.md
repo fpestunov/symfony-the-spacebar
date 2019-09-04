@@ -1,6 +1,6 @@
 # Symfony 4
 
-## Let's Launch!
+## 1. Let's Launch!
 
 ```
 composer self-update
@@ -15,7 +15,7 @@ http://bit.ly/symfony-web-servers.
 Ignoring files
 https://help.github.com/en/articles/ignoring-files
 
-## Our Micro-App & PhpStorm Setup
+## 2. Our Micro-App & PhpStorm Setup
 
 Four directories we need to think about:
 - `\public\index.php` - front controller
@@ -40,7 +40,7 @@ Console commands:
 - PHP Annotations
 - PHP Toolbox
 
-## First Route & Controller
+## 3. First Route & Controller
 
 Two way creating routes.
 
@@ -69,4 +69,33 @@ Comment routes in `config/routes.yaml`.
 
 > "Slug", it's a URL version of the title.
 
+
+## 4. Symfony Flex & Aliases
+
+### Installing the Security Checker
+
+```
+composer require sec-checker --dev
+```
+
+### Hello Symfony Flex
+
+https://flex.symfony.com/
+
+- The first superpower is the alias system
+- Flex Recipes
+
+Was added file is `config/packages/dev/security_checker.yaml` it means that we have new console command.
+
+```
+php bin/console security:check
+```
+
+**By the way, the purpose of the security checker is that it checks to see if there are any known vulnerabilities for packages used in our project.**
+
+```
+git diff composer.json
+```
+
+Thanks to that, whenever we run `composer install` when it finishes, it runs the security checker automatically. So cool!
 
