@@ -99,3 +99,17 @@ git diff composer.json
 
 Thanks to that, whenever we run `composer install` when it finishes, it runs the security checker automatically. So cool!
 
+## 5. The Twig Recipe
+
+Really, most of learning Symfony involves learning to install and use a bunch of powerful, but optional, tools that make this work easier. If your app needs to return HTML, then one of these great tools is called Twig.
+
+### Installing Twig
+
+```
+composer require twig
+git status
+```
+
+- The first change is `config/bundles.php`. Bundles are the "plugin" system for Symfony. And whenever we install a third-party bundle, Flex adds it here so that it's used automatically.
+- The recipe also created some stuff, like a templates/ directory! Yep, no need to guess where templates go: it's pretty obvious!
+- Twig also needs some configuration, so the recipe added it in `config/packages/twig.yaml`.
